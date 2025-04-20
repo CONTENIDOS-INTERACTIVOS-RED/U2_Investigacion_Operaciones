@@ -213,21 +213,170 @@
           .row.material-complementario
             .col-12.col-md-6.col-lg-7
               p Los invitamos a explorar el material complementario de este curso, en esta sección encontrará recursos que le permitirán profundizar  y enriquecer su aprendizaje en los temas tratados en esta unidad.
-  
+
               p.d-flex.my-4
                 img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-                a(href="https://elibro.net/es/lc/tecnologicadeloriente/titulos/274611" target="_blank" rel="noopener noreferrer") De Castro Emilio Cerdá, F. J. A. L. M. (s/f). Las energías renovables en el ámbito internacional. Revistasice.com. 
-  
-              p.d-flex.my-4
-                img.me-3(src='@/assets/template/book.svg' :style="{'max-width':'16px'}")
-                span De Janeiro, R. (1992). La declaración del Río sobre el Medio Ambiente y el Desarrollo. Río de Janeiro República Federativa del Brasil., aprobada en Estocolmo el, 16.
-  
+                a(href="https://aulasvirtuales.uniquindio.edu.co/RecDigital/AlgebraLineal/recursos/unidad4/U4_EA1_descargable.pdf" target="_blank" rel="noopener noreferrer") González Duque, D. (s.f.). Unidad 4 - E.A. 1: Programación Lineal y Planteamiento de Problemas. Universidad del Quindío.
+
               p.d-flex.my-4
                 img.me-3(src='@/assets/template/icono-yt.svg' :style="{'max-width':'16px'}")
-                a(href="https://youtu.be/QKLjwCMyv3M?si=uAWhO9tnyghljaJg" target="_blank" rel="noopener noreferrer") Innovación y sostenibilidad.
-  
+                a(href="https://www.youtube.com/watch?v=NOvHQDI7kkI" target="_blank" rel="noopener noreferrer") Ingeniería Industrial Easy. (2016). COMO RESOLVER EJERCICIOS DE PROGRAMACION LINEAL CON SOLVER DE EXCEL | INVESTIGACION DE OPERACIONES. [Video]. YouTube.
+
             .col-12.col-md-6.col-lg-3.offset-lg-1
               figure
                 img(src='@/assets/componentes/material-complementario.svg', alt='')
   
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      cuestionario: {
+        tema: 'Metodología de Investigación de Operaciones',
+        titulo: 'Ponte a prueba',
+        introduccion:
+          'Demuestra lo que aprendiste en esta unidad y pon a prueba tus conocimientos.',
+        barajarPreguntas: true,
+        preguntas: [
+          {
+            id: 1,
+            texto:
+              '¿Cuál es el orden correcto de las fases en la metodología de Investigación de Operaciones?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto:
+                  'Modelación, Definición del problema, Solución, Validación, Implementación',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto:
+                  'Definición del problema, Modelación, Solución, Validación, Implementación',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto:
+                  'Definición del problema, Solución, Modelación, Implementación, Validación',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto:
+                  'Modelación, Solución, Definición del problema, Validación, Implementación',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto:
+              '¡Correcto! Este es el orden adecuado de las fases metodológicas en la Investigación de Operaciones.',
+            mensaje_incorrecto:
+              'El orden correcto comienza con la definición del problema, seguido de la modelación matemática.',
+          },
+          {
+            id: 2,
+            texto:
+              'Indique si la siguiente afirmación es verdadera o falsa: "En la fase de validación se construyen modelos matemáticos para representar el problema".',
+            imagen: '',
+            barajarRespuestas: false,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Verdadero',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Falso',
+                esCorrecta: true,
+              },
+            ],
+            mensaje_correcto:
+              '¡Correcto! La construcción de modelos matemáticos corresponde a la fase de modelación, no a la de validación.',
+            mensaje_incorrecto:
+              'Incorrecto. En la fase de validación se prueba la solución para garantizar su viabilidad. La construcción de modelos matemáticos corresponde a la fase de modelación.',
+          },
+          {
+            id: 3,
+            texto:
+              'Seleccione la opción que completa correctamente los espacios en blanco: "La Investigación de Operaciones utiliza __________ para analizar problemas administrativos, aplica __________ para evaluar decisiones y se apoya en __________ para representar situaciones complejas."',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto:
+                  'modelos matemáticos - técnicas estadísticas - simulaciones computacionales',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto:
+                  'técnicas estadísticas - simulaciones computacionales - modelos matemáticos',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto:
+                  'simulaciones computacionales - eficiencia operativa - recursos humanos',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto:
+                  'procesos administrativos - desarrollo de productos - clientes estratégicos',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto:
+              '¡Correcto! Las técnicas estadísticas se utilizan para analizar problemas, las simulaciones computacionales para evaluar decisiones y los modelos matemáticos para representar situaciones complejas.',
+            mensaje_incorrecto:
+              'La secuencia correcta es: técnicas estadísticas para análisis, simulaciones computacionales para evaluación y modelos matemáticos para representación.',
+          },
+          {
+            id: 4,
+            texto:
+              '¿Qué beneficios ofrece la aplicación de modelos probabilísticos en la Investigación de Operaciones?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Generan resultados exactos en entornos predecibles',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto:
+                  'Analizan escenarios inciertos y permiten una toma de decisiones flexible',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto: 'Eliminan la necesidad de herramientas computacionales',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Se utilizan únicamente en el sector financiero',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto:
+              '¡Correcto! Los modelos probabilísticos son esenciales para manejar incertidumbres y analizar diferentes escenarios.',
+            mensaje_incorrecto:
+              'Los modelos probabilísticos son especialmente útiles en situaciones de incertidumbre, permitiendo analizar diferentes escenarios y tomar decisiones más flexibles.',
+          },
+        ],
+        mensaje_final_aprobado:
+          '¡Felicitaciones! Has superado la prueba con éxito.',
+        mensaje_final_reprobado:
+          'Te recomendamos repasar nuevamente la unidad para reforzar los conceptos clave antes de volver a intentarlo.',
+      },
+    }
+  },
+}
+</script>

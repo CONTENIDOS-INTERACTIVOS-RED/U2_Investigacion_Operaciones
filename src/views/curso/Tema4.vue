@@ -36,7 +36,7 @@
 
 
       
-      .bg-full-width.bg-color-2.mb-lg-5
+      .bg-full-width.bg-color-2
         .px-4.p-md-5
           .row.justify-content-center.align-items-center
             .col-lg-4
@@ -52,6 +52,18 @@
                   img(src="@/assets/template/icono-pdf.svg")
                 .anexo__texto
                   p <strong>Anexo. </strong> Ejemplos
+
+
+      .bg-full-width.bg-color-5
+        .px-4.px-md-5.py-4
+          .row.align-items-center
+            .col-lg-auto
+              img(src="@/assets/curso/tema4/5.svg", style="max-width: 90px").mx-auto
+            .col-lg
+              p.mb-0.text-white #[strong Reflexión.]
+
+              p.mb-0.text-white El uso de herramientas computacionales como Solver en Excel y GeoGebra, facilita la solución de problemas de Programación Lineal. Mientras que Solver permite encontrar soluciones óptimas de manera automatizada, GeoGebra es útil para comprender visualmente cómo se estructura un problema de optimización. Ambas herramientas son esenciales para la toma de decisiones estratégicas, en administración de empresas. 
+      
       
 
       .bg-full-width.border-top.actividad.bg-color-actividad
@@ -68,15 +80,15 @@
   
               p.d-flex.my-4
                 img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-                a(href="https://elibro.net/es/lc/tecnologicadeloriente/titulos/274611" target="_blank" rel="noopener noreferrer") De Castro Emilio Cerdá, F. J. A. L. M. (s/f). Las energías renovables en el ámbito internacional. Revistasice.com. 
-  
-              p.d-flex.my-4
-                img.me-3(src='@/assets/template/book.svg' :style="{'max-width':'16px'}")
-                span De Janeiro, R. (1992). La declaración del Río sobre el Medio Ambiente y el Desarrollo. Río de Janeiro República Federativa del Brasil., aprobada en Estocolmo el, 16.
+                a(href="https://elibro.net/es/lc/tecnologicadeloriente/titulos/96392" target="_blank" rel="noopener noreferrer") Domínguez, E. (2010). System-Solver, una herramienta de código abierto para la modelación de sistemas dinámicos. Ingeniería e Investigación, 30 (3), 157-164: ( ed.). D - Ingeniería e Investigación.
   
               p.d-flex.my-4
                 img.me-3(src='@/assets/template/icono-yt.svg' :style="{'max-width':'16px'}")
-                a(href="https://youtu.be/QKLjwCMyv3M?si=uAWhO9tnyghljaJg" target="_blank" rel="noopener noreferrer") Innovación y sostenibilidad.
+                a(href="https://www.youtube.com/watch?v=nmp4zwWXoWA" target="_blank" rel="noopener noreferrer") Hernández, A. (2020, 27 de marzo). Método Simplex utilizando Solver de Excel. [Video]. YouTube.
+  
+              p.d-flex.my-4
+                img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
+                a(href="https://support.microsoft.com/es-es/office/definir-y-resolver-un-problema-con-solver-5d1a388f-079d-43ac-a7eb-f63e45925040" target="_blank" rel="noopener noreferrer") Microsoft (S.F.) Definir y resolver un problema con Solver.
   
             .col-12.col-md-6.col-lg-3.offset-lg-1
               figure
@@ -94,7 +106,7 @@ export default {
   data() {
     return {
       cuestionario: {
-        tema: 'Herramientas colaborativas para la construcción de paz',
+        tema: 'Metodología de Investigación de Operaciones',
         titulo: 'Ponte a prueba',
         introduccion:
           'Demuestra lo que aprendiste en esta unidad y pon a prueba tus conocimientos.',
@@ -103,152 +115,150 @@ export default {
           {
             id: 1,
             texto:
-              '¿Cuál de las siguientes es una característica fundamental de los derechos humanos?',
+              '¿Cuál es el orden correcto de las fases en la metodología de Investigación de Operaciones?',
             imagen: '',
             barajarRespuestas: true,
             opciones: [
               {
                 id: 'a',
-                texto: 'Son temporales y cambiantes',
+                texto:
+                  'Modelación, Definición del problema, Solución, Validación, Implementación',
                 esCorrecta: false,
               },
               {
                 id: 'b',
-                texto: 'Son universales y aplican a todas las personas',
+                texto:
+                  'Definición del problema, Modelación, Solución, Validación, Implementación',
                 esCorrecta: true,
               },
               {
                 id: 'c',
-                texto: 'Son exclusivos de ciertos grupos',
+                texto:
+                  'Definición del problema, Solución, Modelación, Implementación, Validación',
                 esCorrecta: false,
               },
               {
                 id: 'd',
-                texto: 'Son opcionales',
+                texto:
+                  'Modelación, Solución, Definición del problema, Validación, Implementación',
                 esCorrecta: false,
               },
             ],
-            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+            mensaje_correcto:
+              '¡Correcto! Este es el orden adecuado de las fases metodológicas en la Investigación de Operaciones.',
+            mensaje_incorrecto:
+              'El orden correcto comienza con la definición del problema, seguido de la modelación matemática.',
           },
           {
             id: 2,
             texto:
-              '¿Cuál de las siguientes afirmaciones sobre la diversidad cultural es correcta?',
+              'Indique si la siguiente afirmación es verdadera o falsa: "En la fase de validación se construyen modelos matemáticos para representar el problema".',
             imagen: '',
-            barajarRespuestas: true,
+            barajarRespuestas: false,
             opciones: [
               {
                 id: 'a',
-                texto: 'Fomenta la homogeneización cultural',
+                texto: 'Verdadero',
                 esCorrecta: false,
               },
               {
                 id: 'b',
-                texto: 'Promueve el respeto y la aceptación de las diferencias',
+                texto: 'Falso',
                 esCorrecta: true,
               },
-              {
-                id: 'c',
-                texto: 'Debilita la identidad cultural de los pueblos',
-                esCorrecta: false,
-              },
-              {
-                id: 'd',
-                texto: 'Limita las oportunidades de interacción',
-                esCorrecta: false,
-              },
             ],
-            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+            mensaje_correcto:
+              '¡Correcto! La construcción de modelos matemáticos corresponde a la fase de modelación, no a la de validación.',
+            mensaje_incorrecto:
+              'Incorrecto. En la fase de validación se prueba la solución para garantizar su viabilidad. La construcción de modelos matemáticos corresponde a la fase de modelación.',
           },
           {
             id: 3,
             texto:
-              'La mediación en un conflicto tiene como objetivo principal:',
+              'Seleccione la opción que completa correctamente los espacios en blanco: "La Investigación de Operaciones utiliza __________ para analizar problemas administrativos, aplica __________ para evaluar decisiones y se apoya en __________ para representar situaciones complejas."',
             imagen: '',
             barajarRespuestas: true,
             opciones: [
               {
                 id: 'a',
-                texto: 'Imponer una solución rápida',
+                texto:
+                  'modelos matemáticos - técnicas estadísticas - simulaciones computacionales',
                 esCorrecta: false,
               },
               {
                 id: 'b',
-                texto: 'Facilitar el diálogo entre las partes',
+                texto:
+                  'técnicas estadísticas - simulaciones computacionales - modelos matemáticos',
                 esCorrecta: true,
               },
               {
                 id: 'c',
-                texto: 'Determinar la culpabilidad',
+                texto:
+                  'simulaciones computacionales - eficiencia operativa - recursos humanos',
                 esCorrecta: false,
               },
               {
                 id: 'd',
-                texto: 'Ignorar las preocupaciones de una parte',
+                texto:
+                  'procesos administrativos - desarrollo de productos - clientes estratégicos',
                 esCorrecta: false,
               },
             ],
-            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+            mensaje_correcto:
+              '¡Correcto! Las técnicas estadísticas se utilizan para analizar problemas, las simulaciones computacionales para evaluar decisiones y los modelos matemáticos para representar situaciones complejas.',
+            mensaje_incorrecto:
+              'La secuencia correcta es: técnicas estadísticas para análisis, simulaciones computacionales para evaluación y modelos matemáticos para representación.',
           },
           {
             id: 4,
-            texto: 'En un foro comunitario, es importante:',
+            texto:
+              '¿Qué beneficios ofrece la aplicación de modelos probabilísticos en la Investigación de Operaciones?',
             imagen: '',
             barajarRespuestas: true,
             opciones: [
               {
                 id: 'a',
-                texto: 'Escuchar solo a las autoridades',
+                texto: 'Generan resultados exactos en entornos predecibles',
                 esCorrecta: false,
               },
               {
                 id: 'b',
-                texto: 'Fomentar la participación de todos los miembros',
+                texto:
+                  'Analizan escenarios inciertos y permiten una toma de decisiones flexible',
                 esCorrecta: true,
               },
               {
                 id: 'c',
-                texto: 'Decidir por votación sin consultar a los demás',
+                texto: 'Eliminan la necesidad de herramientas computacionales',
                 esCorrecta: false,
               },
               {
                 id: 'd',
-                texto: 'Excluir las opiniones de los más jóvenes',
+                texto: 'Se utilizan únicamente en el sector financiero',
                 esCorrecta: false,
               },
             ],
-            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+            mensaje_correcto:
+              '¡Correcto! Los modelos probabilísticos son esenciales para manejar incertidumbres y analizar diferentes escenarios.',
+            mensaje_incorrecto:
+              'Los modelos probabilísticos son especialmente útiles en situaciones de incertidumbre, permitiendo analizar diferentes escenarios y tomar decisiones más flexibles.',
           },
           {
             id: 5,
             texto:
-              '¿Qué busca la justicia restaurativa en el contexto de un conflicto?',
+              'La programación lineal se utiliza exclusivamente para resolver problemas de maximización.',
             imagen: '',
             barajarRespuestas: true,
             opciones: [
               {
                 id: 'a',
-                texto: 'Aplicar una sanción severa',
+                texto: 'Verdadero',
                 esCorrecta: false,
               },
               {
                 id: 'b',
-                texto: 'Reparar el daño y restablecer las relaciones',
+                texto: 'Falso',
                 esCorrecta: true,
-              },
-              {
-                id: 'c',
-                texto: 'Castigar a las partes involucradas',
-                esCorrecta: false,
-              },
-              {
-                id: 'd',
-                texto: 'Ignorar el contexto del conflicto',
-                esCorrecta: false,
               },
             ],
             mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',

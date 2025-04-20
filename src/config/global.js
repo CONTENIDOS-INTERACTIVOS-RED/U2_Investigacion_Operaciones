@@ -78,6 +78,22 @@ export default {
         ],
       },
       {
+        nombreRuta: 'tema4',
+        icono: 'far fa-file-alt',
+        numero: '4',
+        titulo: 'Uso de herramientas computacionales',
+        desarrolloContenidos: true,
+        subMenu: [
+          {
+            icono: 'far fa-file-alt',
+            numero: '4.1',
+            titulo:
+              'Introducción al uso de software como Excel (Solver) y GeoGebra, para resolver problemas de programación lineal',
+            hash: 't_4_1',
+          },
+        ],
+      },
+      {
         nombreRuta: 'sintesis',
         titulo: 'Síntesis',
         desarrolloContenidos: true,
@@ -115,14 +131,24 @@ export default {
   referencias: [
     {
       referencia:
-        'Ardaraz, M. (2002). Teoría de las tres dimensiones de desarrollo sostenible: . Ecosistemas, 11(2)',
-      link:
-        'https://www.revistaecosistemas.net/index.php/ecosistemas/article/view/614',
+        'Kong, M. (2013). Investigación de operaciones: programación lineal. Problemas de transporte. Análisis de redes: ( ed.). Fondo Editorial de la Pontificia Universidad Católica del Perú.',
+      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/79351',
     },
     {
       referencia:
-        'Beltrán, D. J. (2002). La estrategia de desarrollo sostenible de la Unión Europea en el contexto global: de Río a Johannesburgo. ICE. Revista de Economía, (800).',
-      link: '',
+        'Suñé, A. Fonollosa, J. B. & Fernández, V. (2016). Programación lineal: métodos cuantitativos para la toma de decisiones: ( ed.). Universitat Politècnica de Catalunya.',
+      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/61485',
+    },
+    {
+      referencia:
+        'Puente Riofrío, M. I., & Gavilánez Álvarez, Ó. D. (2018). Programación lineal para la toma de decisiones. Escuela Superior Politécnica de Chimborazo.',
+      link:
+        'https://cimogsys.espoch.edu.ec/direccion-publicaciones/public/docs/books/2019-09-19-210805-58%20Libro%20Programacio%CC%81n%20Lineal%20final.pdf',
+    },
+    {
+      referencia: 'Microsoft (S.F.) Definir y resolver un problema con Solver.',
+      link:
+        'https://support.microsoft.com/es-es/office/definir-y-resolver-un-problema-con-solver-5d1a388f-079d-43ac-a7eb-f63e45925040',
     },
   ],
   glosario: [
