@@ -45,7 +45,7 @@
       
             .col-lg-8
               h2.mb-4(data-aos="flip-up") Ejemplos en modelos de maximización y minimización
-              p.mb-4(data-aos="fade-right") En el PDF Ejemplos , se presenta una introducción al uso de cada software en la resolución de problemas de PL.
+              p.mb-4(data-aos="fade-right") En el PDF Ejemplos, se presenta una introducción al uso de cada software en la resolución de problemas de PL.
       
               a.anexo.mb-4.bg-white.w-fit(:href="obtenerLink('/downloads/Anexo_2.pdf')" target="_blank")(data-aos="flip-up")
                 .anexo__icono(:style="{'background-color': '#FCDFDB'}")
@@ -115,154 +115,168 @@ export default {
           {
             id: 1,
             texto:
-              '¿Cuál es el orden correcto de las fases en la metodología de Investigación de Operaciones?',
+              '¿Cuál es la descripción correcta de las "Variables de decisión" en Programación Lineal?',
             imagen: '',
             barajarRespuestas: true,
             opciones: [
               {
                 id: 'a',
                 texto:
-                  'Modelación, Definición del problema, Solución, Validación, Implementación',
-                esCorrecta: false,
+                  'Representan las cantidades que se deben determinar en el problema.',
+                esCorrecta: true,
               },
               {
                 id: 'b',
                 texto:
-                  'Definición del problema, Modelación, Solución, Validación, Implementación',
-                esCorrecta: true,
+                  'Es la expresión matemática que se busca maximizar o minimizar.',
+                esCorrecta: false,
               },
               {
                 id: 'c',
                 texto:
-                  'Definición del problema, Solución, Modelación, Implementación, Validación',
+                  'Conjunto de soluciones que cumplen con todas las restricciones.',
                 esCorrecta: false,
               },
               {
                 id: 'd',
                 texto:
-                  'Modelación, Solución, Definición del problema, Validación, Implementación',
+                  'Punto dentro de la región factible que optimiza la función objetivo.',
                 esCorrecta: false,
               },
             ],
             mensaje_correcto:
-              '¡Correcto! Este es el orden adecuado de las fases metodológicas en la Investigación de Operaciones.',
+              '¡Correcto! Las variables de decisión representan las cantidades que se deben determinar en el problema de Programación Lineal.',
             mensaje_incorrecto:
-              'El orden correcto comienza con la definición del problema, seguido de la modelación matemática.',
+              'Incorrecto. Las variables de decisión son las incógnitas que se deben encontrar en el problema. La opción correcta es que representan las cantidades que se deben determinar.',
           },
           {
             id: 2,
             texto:
-              'Indique si la siguiente afirmación es verdadera o falsa: "En la fase de validación se construyen modelos matemáticos para representar el problema".',
+              'Complete los espacios en blanco con las opciones correctas. "La Programación Lineal permite optimizar _______________ en la toma de decisiones. Su aplicación principal es la resolución de problemas de _______________ y _______________ utilizando modelos matemáticos."',
             imagen: '',
-            barajarRespuestas: false,
+            barajarRespuestas: true,
             opciones: [
               {
                 id: 'a',
-                texto: 'Verdadero',
+                texto: 'Beneficios, dualidad, economía',
                 esCorrecta: false,
               },
               {
                 id: 'b',
-                texto: 'Falso',
+                texto: 'Recursos, maximización, minimización',
                 esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto: 'Factores, programación no lineal, restricciones',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Costos, expansión, desarrollo',
+                esCorrecta: false,
               },
             ],
             mensaje_correcto:
-              '¡Correcto! La construcción de modelos matemáticos corresponde a la fase de modelación, no a la de validación.',
+              '¡Correcto! La Programación Lineal permite optimizar recursos en la toma de decisiones y se aplica principalmente en problemas de maximización y minimización utilizando modelos matemáticos.',
             mensaje_incorrecto:
-              'Incorrecto. En la fase de validación se prueba la solución para garantizar su viabilidad. La construcción de modelos matemáticos corresponde a la fase de modelación.',
+              'Incorrecto. La Programación Lineal se enfoca en optimizar recursos y resolver problemas de maximización (como maximizar ganancias) y minimización (como minimizar costos) mediante modelos matemáticos.',
           },
           {
             id: 3,
             texto:
-              'Seleccione la opción que completa correctamente los espacios en blanco: "La Investigación de Operaciones utiliza __________ para analizar problemas administrativos, aplica __________ para evaluar decisiones y se apoya en __________ para representar situaciones complejas."',
+              '¿Cuál de las siguientes afirmaciones describe mejor la función del método Simplex?',
             imagen: '',
             barajarRespuestas: true,
             opciones: [
               {
                 id: 'a',
                 texto:
-                  'modelos matemáticos - técnicas estadísticas - simulaciones computacionales',
+                  'Es un método gráfico para resolver problemas con dos variables.',
                 esCorrecta: false,
               },
               {
                 id: 'b',
                 texto:
-                  'técnicas estadísticas - simulaciones computacionales - modelos matemáticos',
+                  'Es una técnica iterativa que encuentra soluciones óptimas en Programación Lineal.',
                 esCorrecta: true,
               },
               {
                 id: 'c',
-                texto:
-                  'simulaciones computacionales - eficiencia operativa - recursos humanos',
+                texto: 'Solo se utiliza en problemas de maximización.',
                 esCorrecta: false,
               },
               {
                 id: 'd',
                 texto:
-                  'procesos administrativos - desarrollo de productos - clientes estratégicos',
+                  'Permite resolver ecuaciones diferenciales en entornos económicos.',
                 esCorrecta: false,
               },
             ],
             mensaje_correcto:
-              '¡Correcto! Las técnicas estadísticas se utilizan para analizar problemas, las simulaciones computacionales para evaluar decisiones y los modelos matemáticos para representar situaciones complejas.',
+              '¡Correcto! El método Simplex es una técnica algebraica iterativa que permite encontrar soluciones óptimas en problemas de Programación Lineal, tanto de maximización como de minimización.',
             mensaje_incorrecto:
-              'La secuencia correcta es: técnicas estadísticas para análisis, simulaciones computacionales para evaluación y modelos matemáticos para representación.',
+              'Incorrecto. El método Simplex es una técnica iterativa algebraica (no gráfica) que encuentra soluciones óptimas en Programación Lineal. Puede aplicarse tanto a problemas de maximización como de minimización.',
           },
           {
             id: 4,
             texto:
-              '¿Qué beneficios ofrece la aplicación de modelos probabilísticos en la Investigación de Operaciones?',
-            imagen: '',
-            barajarRespuestas: true,
-            opciones: [
-              {
-                id: 'a',
-                texto: 'Generan resultados exactos en entornos predecibles',
-                esCorrecta: false,
-              },
-              {
-                id: 'b',
-                texto:
-                  'Analizan escenarios inciertos y permiten una toma de decisiones flexible',
-                esCorrecta: true,
-              },
-              {
-                id: 'c',
-                texto: 'Eliminan la necesidad de herramientas computacionales',
-                esCorrecta: false,
-              },
-              {
-                id: 'd',
-                texto: 'Se utilizan únicamente en el sector financiero',
-                esCorrecta: false,
-              },
-            ],
-            mensaje_correcto:
-              '¡Correcto! Los modelos probabilísticos son esenciales para manejar incertidumbres y analizar diferentes escenarios.',
-            mensaje_incorrecto:
-              'Los modelos probabilísticos son especialmente útiles en situaciones de incertidumbre, permitiendo analizar diferentes escenarios y tomar decisiones más flexibles.',
-          },
-          {
-            id: 5,
-            texto:
-              'La programación lineal se utiliza exclusivamente para resolver problemas de maximización.',
+              'La región factible de un problema de Programación Lineal siempre contiene la solución óptima.',
             imagen: '',
             barajarRespuestas: true,
             opciones: [
               {
                 id: 'a',
                 texto: 'Verdadero',
-                esCorrecta: false,
+                esCorrecta: true,
               },
               {
                 id: 'b',
                 texto: 'Falso',
-                esCorrecta: true,
+                esCorrecta: false,
               },
             ],
-            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+            mensaje_correcto:
+              '¡Correcto! La región factible es el conjunto de todas las soluciones que cumplen con las restricciones del problema, y la solución óptima siempre se encuentra dentro de esta región, generalmente en uno de sus vértices.',
+            mensaje_incorrecto:
+              'Incorrecto. La solución óptima de un problema de Programación Lineal siempre se encuentra dentro de la región factible, que es el conjunto de todas las soluciones que satisfacen las restricciones del problema.',
+          },
+          {
+            id: 5,
+            texto:
+              '¿Cuál es el orden correcto de los pasos para resolver un problema de Programación Lineal?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto:
+                  'Definir las variables de decisión → Construir la función objetivo → Identificar restricciones → Determinar la región factible → Resolver con un método adecuado → Analizar e interpretar la solución',
+                esCorrecta: true,
+              },
+              {
+                id: 'b',
+                texto:
+                  'Identificar restricciones → Definir las variables de decisión → Construir la función objetivo → Determinar la región factible → Resolver con un método adecuado → Analizar e interpretar la solución',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto:
+                  'Construir la función objetivo → Definir las variables de decisión → Identificar restricciones → Resolver con un método adecuado → Determinar la región factible → Analizar e interpretar la solución',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto:
+                  'Determinar la región factible → Definir las variables de decisión → Construir la función objetivo → Identificar restricciones → Resolver con un método adecuado → Analizar e interpretar la solución',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto:
+              '¡Correcto! El orden correcto comienza definiendo las variables de decisión, luego se construye la función objetivo, se identifican las restricciones, se determina la región factible, se resuelve con un método adecuado y finalmente se analiza e interpreta la solución.',
+            mensaje_incorrecto:
+              'Incorrecto. El orden correcto para resolver un problema de Programación Lineal es: primero definir las variables de decisión, luego construir la función objetivo, identificar las restricciones, determinar la región factible, resolver con un método adecuado y finalmente analizar e interpretar la solución.',
           },
         ],
         mensaje_final_aprobado:

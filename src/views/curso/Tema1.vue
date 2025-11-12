@@ -1,11 +1,10 @@
 <template lang="pug">
 .curso-main-container.pb-3
-  BannerInterno(:subTitulo="'1. Conceptos básicos y aplicaciones en la administración'")
+  BannerInterno(:subTitulo="'1. Introducción a la Programación Lineal'")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5.overflow-hidden
 
     #t_1_1.titulo-segundo(data-aos="flip-up")
-      h2 #[span 1.1] Generalidades de la Programación Lineal
-    
+      h2 #[span 1.1] Conceptos básicos y aplicaciones en la administración.
 
     .bg-full-width-2.bg-fondo-1.mb-5
       .px-4.px-md-5
@@ -137,7 +136,7 @@
 
             p.d-flex.my-4
               img.me-3(src='@/assets/template/icono-yt.svg' :style="{'max-width':'16px'}")
-              a(href="https://www.youtube.com/watch?v=mkMvhAnkDao" target="_blank" rel="noopener noreferrer") GOAL PROJECT. (2018, 27 de enero) Programación Lineal Método Gráfico 01 [Video]. YouTube.
+              a(href="https://youtu.be/Qfu1TJ8Ii0o?si=nh4E-j-sBnKhEC4B" target="_blank" rel="noopener noreferrer") Facultad de Ciencias Económicas – UNRC (2020, 14 de mayo) Principios de Administración - El Control. [Video] YouTube.
 
           .col-12.col-md-6.col-lg-3.offset-lg-1
             figure

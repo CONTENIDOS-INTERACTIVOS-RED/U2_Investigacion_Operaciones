@@ -425,6 +425,8 @@
                 li
                   | ⊕ x₁, x₂ ≥ 0 (No pueden ser valores negativos).
 
+              p.mb-2 #[strong Solución.] Se determina la mejor combinación de productos almacenados para reducir costos sin exceder la capacidad.
+
 
             div(numero="3" titulo="Ejemplo 3. Planificación de producción")
               p.mb-4 #[strong Contexto.] Una fábrica produce #[strong mesas y sillas] y busca #[strong maximizar sus ganancias] utilizando recursos limitados de madera y horas de trabajo.
@@ -470,7 +472,7 @@
       
             .col-lg-8
               h2.mb-4(data-aos="flip-up") Ejemplos en modelos de maximización y minimización
-              p.mb-4(data-aos="fade-right") La Programación Lineal es una herramienta esencial para la toma de decisiones estratégicas en distintos ámbitos empresariales, permitiendo optimizar el uso de recursos y mejorar la eficiencia operativa. En el PDF Ejemplos en modelos de maximización y minimizació n, se presentan casos detallados en los que se aplican técnicas de optimización para maximizar beneficios o minimizar costos en diversos contextos, como la producción, la logística y la gestión de proyectos. Cada ejemplo incluye la formulación del problema, la definición de variables de decisión, la construcción de la función objetivo y las restricciones, así como una resolución paso a paso para comprender su aplicación práctica.
+              p.mb-4(data-aos="fade-right") La Programación Lineal es una herramienta esencial para la toma de decisiones estratégicas en distintos ámbitos empresariales, permitiendo optimizar el uso de recursos y mejorar la eficiencia operativa. En el PDF Ejemplos en modelos de maximización y minimización, se presentan casos detallados en los que se aplican técnicas de optimización para maximizar beneficios o minimizar costos en diversos contextos, como la producción, la logística y la gestión de proyectos. Cada ejemplo incluye la formulación del problema, la definición de variables de decisión, la construcción de la función objetivo y las restricciones, así como una resolución paso a paso para comprender su aplicación práctica.
       
               a.anexo.mb-4.bg-white.w-fit(:href="obtenerLink('/downloads/Anexo_1.pdf')" target="_blank")(data-aos="flip-up")
                 .anexo__icono(:style="{'background-color': '#FCDFDB'}")

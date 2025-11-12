@@ -36,7 +36,7 @@
       .col-lg-8
         .bg-color-6.px-4.py-5(data-aos="fade-left").mb-4
           p.mb-2 La Programación Lineal (PL), es una herramienta matemática utilizada para optimizar la asignación de recursos en la toma de decisiones empresariales. Su objetivo principal es encontrar la mejor combinación posible de variables para maximizar beneficios o minimizar costos, cumpliendo con restricciones previamente definidas, como disponibilidad de materiales, tiempos de producción o capacidad operativa. A través de un enfoque estructurado basado en modelos matemáticos, la PL permite representar problemas del mundo real mediante tres componentes clave: variables de decisión, función objetivo y restricciones. Este método es ampliamente utilizado en diversos sectores como manufactura, logística, gestión de inventarios y planeación financiera, debido a su capacidad para mejorar la eficiencia operativa y la rentabilidad empresarial.
-          p.mb-0 Dentro de su aplicación en la administración de empresas, la PL permite resolver preguntas estratégicas como:
+
         
         p(data-aos="fade-left") Dentro de su aplicación en la administración de empresas, la PL permite resolver preguntas estratégicas como:
 

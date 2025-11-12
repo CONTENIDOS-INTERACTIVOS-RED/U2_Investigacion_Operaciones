@@ -222,6 +222,14 @@
                 img.me-3(src='@/assets/template/icono-yt.svg' :style="{'max-width':'16px'}")
                 a(href="https://www.youtube.com/watch?v=NOvHQDI7kkI" target="_blank" rel="noopener noreferrer") Ingeniería Industrial Easy. (2016). COMO RESOLVER EJERCICIOS DE PROGRAMACION LINEAL CON SOLVER DE EXCEL | INVESTIGACION DE OPERACIONES. [Video]. YouTube.
 
+              p.d-flex.my-4
+                img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
+                a(href="https://www.gestiondeoperaciones.net/#google_vignette" target="_blank" rel="noopener noreferrer") Blog sobre la Gestión e Investigación de Operaciones con tutoriales y ejercicios resueltos. (s.f.). Programación Lineal (Método Gráfico).
+
+              p.d-flex.my-4
+                img.me-3(src='@/assets/template/icono-yt.svg' :style="{'max-width':'16px'}")
+                a(href="https://www.youtube.com/watch?v=UtXnBuk0rjA" target="_blank" rel="noopener noreferrer") GOAL PROJECT. (2018, 16 de enero). Programación Lineal Problemas Clásicos 06. [Video]. YouTube.
+
             .col-12.col-md-6.col-lg-3.offset-lg-1
               figure
                 img(src='@/assets/componentes/material-complementario.svg', alt='')
